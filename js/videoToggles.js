@@ -46,3 +46,17 @@ const pauseVideo = (video) => {
 progressBar.addEventListener('change', ()=>{
     video.currentTime = (progressBar.value * video.duration) / 100;
 })
+
+
+
+video.addEventListener('click', ()=>{
+    if(playButton.classList.contains('video_play')){
+        playButton.classList.remove('video_play');
+        playButton.classList.add('video_pause');
+        playVideo(video);
+    } else {
+        playButton.classList.remove('video_pause');
+        playButton.classList.add('video_play');
+        pauseVideo(video);
+    }
+})
