@@ -1,0 +1,46 @@
+@use '../utilities/functions' as u;
+
+input[type='range'] {
+    overflow: hidden;
+    -webkit-appearance: none;
+    background-color: #ffffff;
+    border-radius: u.rem(20);
+  }
+  
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #13bba4;
+    margin-top: 5px;
+  }
+  
+  input[type='range']::-webkit-slider-thumb {
+
+    width: u.rem(15);
+    -webkit-appearance: none;
+    height: u.rem(15);
+    cursor: ew-resize;
+    background: #434343;
+    box-shadow: -1005px 0 0 999px #ec3131;
+    border-radius: u.rem(20);
+    margin-top: -5px;
+    background-color: var(--c-pale-white);
+    border: u.rem(2) solid var(--c-black);
+
+  }
+
+
+/** FF*/
+input[type="range"]::-moz-range-progress {
+background-color: #43e5f7; 
+}
+input[type="range"]::-moz-range-track {  
+background-color: #ffffff;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+background-color: #43e5f7; 
+}
+input[type="range"]::-ms-fill-upper {  
+background-color: #ffffff;
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player App</title>
+  </head>
+  <body>
+    <header class="video_header wrapper">
+      <h1>MY FIRST GUITAR VIDEO</h1>
+      <p>Please turn your volume on for the best experience!</p>
+    </header>
+    <main class="video wrapper">
+      <section class="container video_video">
+        <video class="video_videoSrc" src="/src/Rick_Astley_Never_Gonna_Give_You_Up.mp4"></video>
+      </section>
+      <section class="container video_toggler">
+        <button class="video_play"></button>
+        <button class="video_stop"></button>
+        <input class="video_progress" min="0" max="100" value="0" type="range" step="0.1"></input>
+        <span class="video_time">0:00</span>
+      </section>
+    </main>
+    <footer class="video_footer wrapper">
+      <p>Thanks for watching! :)</p>
+    </footer>
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>

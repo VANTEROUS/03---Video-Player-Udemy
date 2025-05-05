@@ -1,0 +1,49 @@
+@use './utilities/functions' as u;
+
+:root {
+
+    --c-black: black;
+    --c-dark-grey: rgb(29, 29, 29);
+    --c-light-grey: rgb(100, 100, 100);
+    --c-grey: rgb(61, 61, 61);
+    --c-white: rgb(255, 255, 255);
+    --c-pale-white: rgb(240, 240, 240);
+    
+}
+    
+*,*::before, *::after{
+margin: 0;
+padding: 0;
+font-family: "JetBrains Mono", monospace;
+box-sizing: border-box;
+}
+
+body {
+background-color: var(--c-dark-grey);
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+h1,h2,h3, p {
+color: var(--c-white);
+}
+
+a {
+text-decoration: none;
+}
+
+.wrapper {
+    position: relative;
+    text-decoration: none;
+    background-color: var(--c-grey);
+    width: 90%;
+}
+
+.container {
+    position: relative;
+    text-decoration: none;
+}
+
